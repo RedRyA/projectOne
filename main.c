@@ -9,7 +9,7 @@
 #define MIN_YEAR 1475
 #define AUTHOR_CHAR_LIMIT 32
 #define BOOK_TITLE_LIMIT 128
-#define CITY_AND_PUBCOMP_LIMIT 64
+#define CITY_AND_PUB_LIMIT 64
 
 #define MAX_COUNTER 3
 
@@ -39,57 +39,73 @@ char buffer[ERROR_TRAP_BUFFER];
 */
 
 // Author First Name //
- char authorFName0[AUTHOR_CHAR_LIMIT], char authorFName1[AUTHOR_CHAR_LIMIT],char authorFName2[AUTHOR_CHAR_LIMIT], char authorFName3[AUTHOR_CHAR_LIMIT],char authorFName4[AUTHOR_CHAR_LIMIT], char authorFName5[AUTHOR_CHAR_LIMIT],char authorFName6[AUTHOR_CHAR_LIMIT], char authorFName7[AUTHOR_CHAR_LIMIT],char authorFName8[AUTHOR_CHAR_LIMIT], char authorFName9[AUTHOR_CHAR_LIMIT],
+ char authorFName0[AUTHOR_CHAR_LIMIT]; char authorFName1[AUTHOR_CHAR_LIMIT];
+ char authorFName2[AUTHOR_CHAR_LIMIT]; char authorFName3[AUTHOR_CHAR_LIMIT];
+ char authorFName4[AUTHOR_CHAR_LIMIT]; char authorFName5[AUTHOR_CHAR_LIMIT];
+ char authorFName6[AUTHOR_CHAR_LIMIT]; char authorFName7[AUTHOR_CHAR_LIMIT];
+  char authorFName8[AUTHOR_CHAR_LIMIT]; char authorFName9[AUTHOR_CHAR_LIMIT];
 
 // Author Last Name //
-char authorLName0[AUTHOR_CHAR_LIMIT], char authorLName1[AUTHOR_CHAR_LIMIT],
-char authorLName2[AUTHOR_CHAR_LIMIT], char authorLName3[AUTHOR_CHAR_LIMIT], char authorLName4[AUTHOR_CHAR_LIMIT], char authorLName5[AUTHOR_CHAR_LIMIT],
-char authorLName6[AUTHOR_CHAR_LIMIT], char authorLName7[AUTHOR_CHAR_LIMIT], 
-char authorLName8[AUTHOR_CHAR_LIMIT], char authorLName9[AUTHOR_CHAR_LIMIT],
+char authorLName0[AUTHOR_CHAR_LIMIT]; char authorLName1[AUTHOR_CHAR_LIMIT];
+char authorLName2[AUTHOR_CHAR_LIMIT]; char authorLName3[AUTHOR_CHAR_LIMIT]; 
+char authorLName4[AUTHOR_CHAR_LIMIT]; char authorLName5[AUTHOR_CHAR_LIMIT];
+char authorLName6[AUTHOR_CHAR_LIMIT]; char authorLName7[AUTHOR_CHAR_LIMIT]; 
+char authorLName8[AUTHOR_CHAR_LIMIT]; char authorLName9[AUTHOR_CHAR_LIMIT];
 
 //Book Title //
- char bookTitle0[BOOK_TITLE_LIMIT],char bookTitle1[BOOK_TITLE_LIMIT],
- char bookTitle2[BOOK_TITLE_LIMIT],char bookTitle3[BOOK_TITLE_LIMIT],
- char bookTitle4[BOOK_TITLE_LIMIT],char bookTitle5[BOOK_TITLE_LIMIT],
- char bookTitle6[BOOK_TITLE_LIMIT],char bookTitle7[BOOK_TITLE_LIMIT],
- char bookTitle8[BOOK_TITLE_LIMIT],char bookTitle9[BOOK_TITLE_LIMIT],
+ char bookTitle0[BOOK_TITLE_LIMIT];char bookTitle1[BOOK_TITLE_LIMIT];
+ char bookTitle2[BOOK_TITLE_LIMIT];char bookTitle3[BOOK_TITLE_LIMIT];
+ char bookTitle4[BOOK_TITLE_LIMIT];char bookTitle5[BOOK_TITLE_LIMIT];
+ char bookTitle6[BOOK_TITLE_LIMIT];char bookTitle7[BOOK_TITLE_LIMIT];
+ char bookTitle8[BOOK_TITLE_LIMIT];char bookTitle9[BOOK_TITLE_LIMIT];
 
  // Book Edition //
- unsigned int bookEdition0, unsigned int7 bookEdition1,
- unsigned int bookEdition2, unsigned int bookEdition3, 
- unsigned int bookEdition4,unsigned int bookEdition5, 
- unsigned int bookEdition6 unsigned int bookEdition7,
- unsigned int bookEdition8 unsigned int bookEdition9
+ unsigned int bookEdition0; unsigned int bookEdition1;
+ unsigned int bookEdition2; unsigned int bookEdition3; 
+ unsigned int bookEdition4;unsigned int bookEdition5; 
+ unsigned int bookEdition6; unsigned int bookEdition7;
+ unsigned int bookEdition8; unsigned int bookEdition9;
 
 // Publication Company //
- char pubCompany0[CITY_AND_PUB_LIMIT],char pubCompany1[CITY_AND_PUB_LIMIT],
- char pubCompany2[CITY_AND_PUB_LIMIT],char pubCompany3[CITY_AND_PUB_LIMIT],
- char pubCompany4[CITY_AND_PUB_LIMIT], char pubCompany5[CITY_AND_PUB_LIMIT],
- char pubCompany6[CITY_AND_PUB_LIMIT],char pubCompany7[CITY_AND_PUB_LIMIT],
- char pubCompany8[CITY_AND_PUB_LIMIT],char pubCompany9[CITY_AND_PUB_LIMIT],
+ char pubCompany0[CITY_AND_PUB_LIMIT];char pubCompany1[CITY_AND_PUB_LIMIT];
+ char pubCompany2[CITY_AND_PUB_LIMIT];char pubCompany3[CITY_AND_PUB_LIMIT];
+ char pubCompany4[CITY_AND_PUB_LIMIT]; char pubCompany5[CITY_AND_PUB_LIMIT];
+ char pubCompany6[CITY_AND_PUB_LIMIT];char pubCompany7[CITY_AND_PUB_LIMIT];
+ char pubCompany8[CITY_AND_PUB_LIMIT];char pubCompany9[CITY_AND_PUB_LIMIT];
 
 //Publicatiuon Year //
-unsigned int pubYear0, unsigned int pubYear1, 
-unsigned int pubYear2, unsigned int pubYear3, 
-unsigned int pubYear4, unsigned int pubYear5,
-unsigned int pubYear6, unsigned int pubYear7, 
-unsigned int pubYear8, unsigned int pubYear9, 
+unsigned int pubYear0; unsigned int pubYear1; 
+unsigned int pubYear2; unsigned int pubYear3; 
+unsigned int pubYear4; unsigned int pubYear5;
+unsigned int pubYear6; unsigned int pubYear7; 
+unsigned int pubYear8; unsigned int pubYear9; 
 
 // Publication City //
-char pubCity0[CITY_CHAR_LIMIT], pubCity1[CITY_CHAR_LIMIT],
-char pubCity2[CITY_CHAR_LIMIT], pubCity3[CITY_CHAR_LIMIT],
-char pubCity4[CITY_CHAR_LIMIT], pubCity5[CITY_CHAR_LIMIT],
-char pubCity6[CITY_CHAR_LIMIT], pubCity7[CITY_CHAR_LIMIT],
-char pubCity8[CITY_CHAR_LIMIT], pubCity9[CITY_CHAR_LIMIT],
+char pubCity0[CITY_AND_PUB_LIMIT]; char pubCity1[CITY_AND_PUB_LIMIT];
+char pubCity2[CITY_AND_PUB_LIMIT];char pubCity3[CITY_AND_PUB_LIMIT];
+char pubCity4[CITY_AND_PUB_LIMIT];char pubCity5[CITY_AND_PUB_LIMIT];
+char pubCity6[CITY_AND_PUB_LIMIT];char pubCity7[CITY_AND_PUB_LIMIT];
+char pubCity8[CITY_AND_PUB_LIMIT];char pubCity9[CITY_AND_PUB_LIMIT];
 
 // ISBN-13 Number //
- unsigned long isbn0, unsigned long isbn1,
- unsigned long isbn2, unsigned long isbn3,
- unsigned long isbn4, unsigned long isbn5,
- unsigned long isbn6, unsigned long isbn7,
- unsigned long isbn8, unsigned long isbn9,
+ unsigned long isbn0; unsigned long isbn1;
+ unsigned long isbn2; unsigned long isbn3;
+ unsigned long isbn4; unsigned long isbn5;
+ unsigned long isbn6; unsigned long isbn7;
+ unsigned long isbn8; unsigned long isbn9;
 
- 
+  /* 
+
+ FIRST NAME:
+ LAST NAME:
+ BOOK TITILE:
+ EDITION:
+ PUB COMPAMNY:
+ PUB YEAR:
+ PUB CITY:
+ ISBN:
+
+*/
 
 
 int main() {
@@ -110,14 +126,14 @@ int main() {
       
       /////////// AUTHOR FIRST NAME 0 /////////////////
       do {
-// Git Tests
-        isGogitod = false;
 
-        printf("What is the author's last name? \n");
+        isGood = false;
+
+        printf("What is the author's first name? \n");
         scanf(" %[^\n]s", buffer);
 
         if (strlen(buffer) >= AUTHOR_CHAR_LIMIT) {
-          printf("Author name isgit limited to 32 characters, try again\n");
+          printf("Author name is limited to 32 characters, try again\n");
           isGood = true;
         }
 
@@ -126,7 +142,75 @@ int main() {
       strcpy(authorFName0, buffer);
       memset(buffer, '\0', ERROR_TRAP_BUFFER);
 
-      ///////////// PUBLICATION YEAR 1 //////////////////////
+      ////////////// AUTHOR LAST NAME 0 ////////////////////////
+       do {
+
+        isGood = false;
+
+        printf("What is the author's last name? \n");
+        scanf(" %[^\n]s", buffer);
+
+        if (strlen(buffer) >= AUTHOR_CHAR_LIMIT) {
+          printf("Author name is limited to 32 characters, try again\n");
+          isGood = true;
+        }
+
+      } while (isGood);
+
+      strcpy(authorLName0, buffer);
+      memset(buffer, '\0', ERROR_TRAP_BUFFER);
+
+    /////////////  BOOK TITILE 0 ////////////////////////
+     do {
+
+        isGood = false;
+
+        printf("What is the book's title? \n");
+        scanf(" %[^\n]s", buffer);
+
+        if (strlen(buffer) >= BOOK_TITLE_LIMIT) {
+          printf("Book title is limited to 128 characters, try again\n");
+          isGood = true;
+        }
+
+      } while (isGood);
+
+      strcpy(bookTitle0, buffer);
+      memset(buffer, '\0', ERROR_TRAP_BUFFER);
+
+    /////////////// BOOK EDITION 0 ////////////////////////
+ do {
+        isGood = false;
+
+        printf("What is the book's edition?\n Press enter to skip\n");
+        scanf("%u", &bookEdition0);
+        getchar();
+
+// If they press enter, skip tio the next question
+        
+
+      } while (isGood);
+
+    //////////////// PUBLICATION COMPANY 0 ////////////////
+     do {
+
+        isGood = false;
+
+        printf("What is the publication company? \n");
+        scanf(" %[^\n]s", buffer);
+
+        if (strlen(buffer) >= CITY_AND_PUB_LIMIT) {
+          printf("Publication company is limited to 64 characters, try again\n");
+          isGood = true;
+        }
+
+      } while (isGood);
+
+      strcpy(authorLName0, buffer);
+      memset(buffer, '\0', ERROR_TRAP_BUFFER);
+
+
+      ///////////// PUBLICATION YEAR 0 //////////////////////
       do {
         isGood = false;
 
@@ -134,136 +218,71 @@ int main() {
         scanf("%u", &pubYear1);
         getchar();
 
-        if ((pubYear1 < MIN_YEAR) || (pubYear1 > MAX_YEAR)) {
+        if ((pubYear0 < MIN_YEAR) || (pubYear0 > MAX_YEAR)) {
           printf("Publication year must be between 1475 and 2022\n");
           isGood = true;
         }
 
       } while (isGood);
 
-      /////////// PUBLICATION CITY 1 //////////////////////
+      /////////// PUBLICATION CITY 0 //////////////////////
       do {
         isGood = false;
 
         printf("What is the publication city?\n");
         scanf(" %[^\n]s", buffer);
 
-        if (strlen(buffer) >= CITY_CHAR_LIMIT) {
+        if (strlen(buffer) >= CITY_AND_PUB_LIMIT) {
           printf("City name must be less than 64 characters.\n");
           isGood = true;
         }
 
       } while (isGood);
 
-      strcpy(pubCity1, buffer);
+      strcpy(pubCity0, buffer);
       memset(buffer, '\0', ERROR_TRAP_BUFFER);
+
+    //////////////// ISBN 0 ////////////////////////
+       do {
+        isGood = false;
+
+        printf("What is the ISBN-13 number?\n");
+        scanf("%u", &isbn0);
+        getchar();
+          for(int i =0 ; i<=strlen(isbn0); i++)
+        if ((pubYear0 < MIN_YEAR) || (pubYear0 > MAX_YEAR)) {
+          printf("Publication year must be between 1475 and 2022\n");
+          isGood = true;
+        }
+
+      } while (isGood);
       break;
+
+
+
+
+
+
+
+
+
 
       ///////////////////////////////////////////////////////////
 
     case 1:
-      /////////// AUTHOR FIRST NAME 1 /////////////////
-      do {
+    
+        
 
-        isGood = false;
+        
+      
+g
+       
 
-        printf("What is the author's last name? \n");
-        scanf(" %[^\n]s", buffer);
+    
 
-        if (strlen(buffer) >= AUTHOR_CHAR_LIMIT) {
-          printf("Author name is limited to 32 characters, try again\n");
-          isGood = true;
-        }
+      
 
-      } while (isGood);
-
-      strcpy(authorfName1, buffer);
-      memset(buffer, '\0', ERROR_TRAP_BUFFER);
-
-      ///////////// PUBLICATION YEAR 2 //////////////////////
-      do {
-        isGood = false;
-
-        printf("What is the publication year?\n");
-        scanf("%u", &pubYear2);
-        getchar();
-
-        if ((pubYear2 < MIN_YEAR) || (pubYear2 > MAX_YEAR)) {
-          printf("Publication year must be between 1475 and 2022\n");
-          isGood = true;
-        }
-
-      } while (isGood);
-
-      /////////// PUBLICATION CITY 2 //////////////////////
-      do {
-        isGood = false;
-
-        printf("What is the publication city?\n");
-        scanf(" %[^\n]s", buffer);
-
-        if (strlen(buffer) >= CITY_CHAR_LIMIT) {
-          printf("City name must be less than 64 characters.\n");
-          isGood = true;
-        }
-
-      } while (isGood);
-
-      strcpy(pubCity2, buffer);
-      memset(buffer, '\0', ERROR_TRAP_BUFFER);
-      break;
-      ////////////////////////////////////////////////////////////////
-    case 2:
-
-      /////////// AUTHOR NAME 3 /////////////////
-      do {
-
-        isGood = false;
-
-        printf("What is the author's last name? \n");
-        scanf(" %[^\n]s", buffer);
-
-        if (strlen(buffer) >= AUTHOR_CHAR_LIMIT) {
-          printf("Author name is limited to 32 characters, try again\n");
-          isGood = true;
-        }
-
-      } while (isGood);
-
-      strcpy(authorLName3, buffer);
-      memset(buffer, '\0', ERROR_TRAP_BUFFER);
-
-      ///////////// PUBLICATION YEAR 3 //////////////////////
-      do {
-        isGood = false;
-
-        printf("What is the publication year?\n");
-        scanf("%u", &pubYear3);
-      getchar();
-        if ((pubYear3 < MIN_YEAR) || (pubYear3 > MAX_YEAR)) {
-          printf("Publication year must be between 1475 and 2022\n");
-          isGood = true;
-        }
-
-      } while (isGood);
-
-      /////////// PUBLICATION CITY 3 //////////////////////
-      do {
-        isGood = false;
-
-        printf("What is the publication city?\n");
-        scanf(" %[^\n]s", buffer);
-
-        if (strlen(buffer) >= CITY_CHAR_LIMIT) {
-          printf("City name must be less than 64 characters.\n");
-          isGood = true;
-        }
-
-      } while (isGood);
-
-      strcpy(pubCity3, buffer);
-      memset(buffer, '\0', ERROR_TRAP_BUFFER);
-      break;
+     
 
     default:
 
