@@ -1477,7 +1477,7 @@ int main() {
         printf("What is the ISBN-13 number?\n");
         scanf("%lu", &isbn9);
         getchar();
-        
+
         if ((isbn9 < 1000000000000) || (isbn9 > 9999999999999)) {
           printf("ISBN-13 must be 13 digits long\n");
           isGood = true;
@@ -1589,7 +1589,7 @@ int main() {
     printf ("\nBook 10:\n Author Name: %s %s\n Book Title: %s \n Edition: %d \n Publication Company: %s \n Publication Year: %u \n Publication City: %s\n ISBN: %lu \n",authorFName9, authorLName9,bookTitle9,bookEdition9,pubCompany9, pubYear9, pubCity9, isbn9);
     }
 
-  
+  // test //
       
 
   return 0;
