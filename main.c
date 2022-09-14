@@ -1,6 +1,6 @@
 /* Ryan Reddoch
    CS-1714-B1
-   Exercise 3 */
+   Project One */
 
 
 // CONSTANTS //
@@ -24,7 +24,7 @@
 // buffer //
 char buffer[ERROR_TRAP_BUFFER];
 
-// global variables: //
+// layout of variables //
 
  /* 
 
@@ -38,6 +38,8 @@ char buffer[ERROR_TRAP_BUFFER];
  ISBN:
 
 */
+
+// global variables: //
 
 // Author First Name //
  char authorFName0[AUTHOR_CHAR_LIMIT]; char authorFName1[AUTHOR_CHAR_LIMIT];
@@ -1500,7 +1502,7 @@ int main() {
        counter++;
     if (counter < MAX_COUNTER) {
       
-      printf("Would you like to comtinue?\n Y/N\n");
+      printf("Would you like to continue?\n Y/N\n");
       scanf("%s", buffer);
       getchar();
       char ans = toupper(buffer[0]);
@@ -1589,7 +1591,7 @@ int main() {
     printf ("\nBook 10:\n Author Name: %s %s\n Book Title: %s \n Edition: %d \n Publication Company: %s \n Publication Year: %u \n Publication City: %s\n ISBN: %lu \n",authorFName9, authorLName9,bookTitle9,bookEdition9,pubCompany9, pubYear9, pubCity9, isbn9);
     }
 
-  // test //
+  
       
 
   return 0;
